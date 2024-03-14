@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #d7d7d7;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #2A2A2A;
+}
+
+#logo-title {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-left: 4%;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+#header-links {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#top {
+    position: relative;
+    top: 80px;
+    width: 100vw;
+    height: 140vh;
+}
+
+.title-container {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    display: inline-block;
+    background: linear-gradient(to left, #2D3A69, #5A307B);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10em;
+    margin: 0;
+}
+
+#sous-titre {
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
+}
+
+#fleche {
+    border-radius: 500px;
+    transition-duration: 0.3s;
+}
+
+#fleche:hover {
+    background: linear-gradient(to right, #2D3A69, #5A307B);
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+#app-container {
+    position: relative;
+    top: -25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#app-img {
+    width: 100%;
+    height: auto;
+}
+
+.app {
+    width: 60vw;
+    height: auto;
+    perspective: 1000px;
+}
+
+.app-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.app-back-inner {
+    padding: 7%;
+    background-color: #646464;
+    opacity: 0.8;
+    backdrop-filter: blur(20px);
+    height: 33vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#app-back-title {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+#app-back-text {
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: "Open Sans", sans-serif;
+}
+
+.app-front, .app-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.app-front {
+    background: #f0f0f0;
+}
+
+.app-back {
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+}
+
+.app.flipped .app-inner {
+    transform: rotateY(180deg);
+}
+
+#fleche2 {
+    margin-top: 44vw;
+    border-radius: 500px;
+    transition-duration: 0.3s;
+}
+
+#fleche2:hover {
+    background: linear-gradient(to right, #2D3A69, #5A307B);
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+#sous-titre-app {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#tuto-container {
+    position: absolute;
+    top: 225vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tuto {
+    margin-top: 5%;
+}
+
+.rond {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    border-radius: 500px;
+    width: 15vw;
+    height: 15vw;
+    background-color: #2A2A2A;
+}
+
+.rond-droite {
+    margin-left: 45vw;
+}
+
+#tuto-gauche {
+    margin-left: -7.5vw;
+}
+
+.tuto-text {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 150%;
+    background-color: rgba(136, 136, 136, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 80px;
+    width: 45vw;
+    height: 24vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -7.5vw;
+    margin-left: 7.5vw;
+}
+
+.tuto-img {
+    width: 85%;
+    height: auto;
+    margin-top: -3%;
+}
+
+.tuto-icon {
+    opacity: 0.7;
+    z-index: 3;
+    width: 50%;
+}
+
+#tuto-icon2 {
+    opacity: 0.9;
+    width: 80%;
+}
+
+h2 {
+    margin-top: -2%;
+}
+
+#tuto-title {
+    font-size: 4em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+
+#app-title {
+    font-family: "Space Mono", monospace;
+    display: inline-block;
+    background: linear-gradient(to left, #2D3A69, #5A307B);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#app-title:hover {
+    display: inline-block;
+    background: linear-gradient(to right, #2D3A69, #5A307B);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
