@@ -181,16 +181,12 @@ header {
 
 #tuto-container {
     position: absolute;
-    top: 225vh;
+    top: 230vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-}
-
-.tuto {
-    margin-top: 5%;
 }
 
 .rond {
