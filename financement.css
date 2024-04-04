@@ -1,0 +1,31 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #d7d7d7;
+}
+
+.content {
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    margin-top: 10%;
+    font-size: 1.2em;
+}
+
+.app-title {
+    font-family: "Space Mono", monospace;
+    display: inline-block;
+    background: linear-gradient(to left, #2D3A69, #5A307B);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+

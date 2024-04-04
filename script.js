@@ -95,11 +95,11 @@ fetch('avis-parents.json')
     .then(data => {
         const commentairesparents = data.map(item => item.commentaire);
 
-        avisFrontTextParents.innerHTML = commentairesparents[currentIndex];
+        avisFrontTextParents.innerHTML = commentairesparents[currentIndexParents];
 
         flechegaucheParents.addEventListener('click', function(event) {
             currentIndexParents = (currentIndexParents - 1 + commentairesparents.length) % commentairesparents.length;
-            if (currentLocation === "front") {
+            if (currentLocationParents === "front") {
                 avisBackTextParents.innerHTML = commentairesparents[currentIndexParents];
                 currentLocationParents = "back";
             }

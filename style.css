@@ -399,7 +399,6 @@ h2 {
 footer {
     background-color: #2A2A2A;
     color: white;
-    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -414,6 +413,7 @@ footer {
 
 .footer-links {
     list-style: none;
+    padding: 0;
 }
 
 .footer-links li {
@@ -424,4 +424,141 @@ footer {
 .footer-links a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 0px) {
+
+    body, html {
+        overflow-x: hidden;
+        background: url("img/top-phone.png");
+        background-size: 100vw;
+        background-repeat: no-repeat;
+    }
+
+    #header-links {
+        font-size: 0.8em;
+    }
+
+    #title {
+        font-size: 5em;
+    }
+
+    #sous-titre {
+        font-size: 1em;
+    }
+
+    #fleche {
+        width: 70%;
+    }
+
+    #a-fleche {
+        margin-left: 7%;
+    }
+
+    #app-container {
+        margin-top: 10vh;
+    }
+
+    .app {
+        width: 80vw;
+    }
+
+    #fleche2 {
+        margin-top: 30vh;
+    }
+
+    #app-back-title {
+        font-size: 1.5em;
+        margin-top: 3%;
+    }
+
+    #app-back-text {
+        font-size: 0.7em;
+    }
+
+    #sous-titre-app {
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .rond {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .tuto-text {
+        width: 100%;
+        height: 40vw;
+        font-size: 0.7em;
+        border-radius: 40px;
+        margin-left: 0;
+    }
+
+    #tuto-container {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #tuto-gauche {
+        margin-left: 0;
+    }
+
+    .rond {
+        margin-left: -10%;
+    }
+
+    .rond-droite {
+        margin-left: 85%;
+    }
+
+    .flechedroite, .flechegauche {
+        width: 15%;
+        margin-top: 55%;
+    }
+
+    .flechegauche {
+        margin-left: -17%;
+    }
+
+    .flechedroite {
+        margin-left: 102%;
+    }
+
+    #avis-container {
+        margin-top: 10vh;
+    }
+
+    #avis-parents-container {
+        margin-top: 0;
+    }
+
+    .avis {
+        width: 70vw;
+    }
+
+    .avis-front-inner, .avis-back-inner, #avis-front-inner-parents, #avis-back-inner-parents {
+        height: 40vw;
+        font-size: 0.8em;
+    }
+
+    #avis-front-inner-parents, #avis-back-inner-parents {
+        font-size: 0.5em;
+    }
+
+    #about-us {
+        margin-top: 0;
+    }
+
+    #about-us-text {
+        width: 80%;
+    }
+
+    #who-are-we {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
 }
