@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 7%;
 }
 
 .app-title {
@@ -43,6 +44,16 @@ table {
 th, td {
     padding: 10px;
     border-bottom: 1px solid #232323;
+}
+
+#pub {
+    border-radius: 30px;
+    margin-bottom: 3%;
+}
+
+#ulule {
+    width: 30%;
+    margin-left: 35%;
 }
 
 header {
@@ -90,11 +101,9 @@ header {
 footer {
     background-color: #2A2A2A;
     color: white;
-    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 10%;
 }
 
 .footer-content {
@@ -106,6 +115,8 @@ footer {
 
 .footer-links {
     list-style: none;
+    padding: 0;
+    width: 80%;
 }
 
 .footer-links li {
@@ -122,4 +133,36 @@ header, footer {
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 0px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    #header-links {
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #ulule {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .content {
+        margin-top: 20%;
+    }
+
+    #graphique {
+        width: 100%;
+    }
+
+    #pub {
+        width: 100%;
+        height: auto;
+    }
 }

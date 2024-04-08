@@ -433,6 +433,7 @@ footer {
         background: url("img/top-phone.png");
         background-size: 100vw;
         background-repeat: no-repeat;
+        background-color: #d7d7d7;
     }
 
     #header-links {
